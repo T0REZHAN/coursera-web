@@ -1,0 +1,66 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #f4f4f9;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+/* Section styling */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.box {
+    background-color: #e0e4e7;
+    border: 1px solid black;
+    padding: 20px;
+    position: relative;
+    flex: 1;
+    min-width: 300px; /* Ensures sections stack on smaller screens */
+}
+
+.section-title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #ffcccb;
+    color: black;
+    padding: 5px 10px;
+    border: 1px solid black;
+    font-weight: bold;
+}
+
+/* Tablet view (768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    main {
+        flex-direction: column;
+    }
+}
+
+/* Desktop view (992px and above) */
+@media (min-width: 992px) {
+    .box {
+        width: 30%;
+    }
+}
